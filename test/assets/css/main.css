@@ -1,0 +1,268 @@
+.header.header {
+    width: 100%;
+    height: 56px;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+}
+.header__frame {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__title-name {
+    width:  20%;
+    height: 100%;
+    font-size: 2.5rem;
+    font-family: var(--font-text);
+    color: var(--white-color);
+    display: flex;
+    position: relative;
+    
+}
+.header__title-language{
+    font-size: 2.5rem;
+    font-family: var(--font-text);
+    color: var(--white-color);
+}
+
+.header__title-icon{
+    width: 20%;
+    font-size: 2.5rem;
+    font-family: var(--font-text);
+    color: var(--white-color);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.idcard {
+    display: flex;
+    align-items: center;
+}
+.select-icon {
+    font-size: 2rem;
+    padding-left: 1px ;
+}
+.container__application {
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: #212529;
+    width: 26rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+}
+.container__application-report,
+.container__application-history,
+.container__application-dashboard,
+.container__application-information,
+.container__application-device,
+.container__application-trend {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-text);
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.header__title-icon-hov:hover,
+.container__application-report:hover,
+.container__application-history:hover,
+.container__application-dashboard:hover,
+.container__application-information:hover,
+.container__application-device:hover,
+.container__application-trend:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+}
+
+.container__content {
+    background-color: var(--white-color);
+    width: 85%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container__content-title {
+    height: 4rem  ;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: var(--font-text);
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 8px;
+}
+
+.container__content-item {
+    padding: 8px;
+    font-family: var(--font-text);
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.container__content-body{
+    width: 100%;
+    height: 50rem;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container__content-body-clock{
+      display: flex;
+      width: 350px;
+      height: 350px;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../image/clock1.png) ;
+      background-size: cover;
+      border: 4px solid #191919;
+      border-radius: 50%;
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.container__content-body-clock2{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/clock2.png) ;
+    background-size: cover;
+    border: 4px solid #191919;
+    border-radius: 50%;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.container__content-body-clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #848484;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 1000;
+}
+
+.container__content-body-clock2::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #848484;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 1000;
+}
+
+.container__content-body-clock-min, .container__content-body-clock-min2 {
+    position: absolute;
+}
+.container__content-body-clock-min, .container__content-body-clock-mn,
+.container__content-body-clock-min2, .container__content-body-clock-mn2 {
+    width: 280px;
+    height: 280px;
+}
+.container__content-body-clock-mn, .container__content-body-clock-mn2 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border: 50%;
+}
+.container__content-body-clock-mn::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 130px;
+    background-color: #797777;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.container__content-body-clock-mn2::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 130px;
+    background-color: #797777;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.container__content-trend {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.container__content-trend-1{
+    height: 90%;
+    width: 80%;
+    
+}
+
+.container__content-voltage-table{
+    width: auto;
+}
+.container__content-voltageTHD-table{
+    width: auto;
+}
+.container__content-voltage-tablbtext{
+    color: blue;
+    font-size: 15px;
+    font-weight:600;
+    padding: 5px 15px;
+}
+.container__content-voltagevalue-tablbtext{
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: blue;
+    width: 100px;
+    text-align: right;
+}
+.container__content-current-table{
+    width: auto;
+
+}
+.container__content-currentTHD-table{
+    width: auto;
+}
+.container__content-current-tablbtext{
+    color: red;
+    font-size: 15px;
+    font-weight:600;
+    padding: 5px 15px;
+}
+.container__content-currentvalue-tablbtext{
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: red;
+    width: 100px;
+    text-align: right;
+}
+.container__content-table-container {
+    display: flex;
+  }
+  
+.container__content-table-container table {
+    margin-right: 15px;
+}
+.container__content-tableTHD-container {
+    display: flex;
+  }
+  
+.container__content-tableTHD-container table {
+    margin-right: 88px;
+}
