@@ -1,9 +1,11 @@
+/* phần header */
 .header.header {
     width: 100%;
     height: 56px;
     background-color: #212529;
     display: flex;
     align-items: center;
+   
 }
 .header__frame {
     width: 100%;
@@ -12,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .header__title-name {
     width:  20%;
@@ -21,13 +24,72 @@
     color: var(--white-color);
     display: flex;
     position: relative;
+    padding-left: 2rem;
+    align-items: center;
     
 }
 .header__title-language{
     font-size: 2.5rem;
     font-family: var(--font-text);
     color: var(--white-color);
+    /* background-color: #212529; */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.language__select-menu{
+    width: 270px;
+    cursor: pointer;
+    position: relative;
+}
+.language__select{
+    background-color: #212529;
+    padding: 0px;
+    color: #fff;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.language__options-list{
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: .4s linear .2s;
+    height: 0;
+    color: var(--black-color);
+  }
+  
+.language__option{
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+  
+.language__option:hover,
+.language__option.selected{
+    color: #00a8ff;
+}
+  
+.language__options-list::-webkit-scrollbar{
+    width: 4px;
+    background-color: #eee;
+}
+  
+.language__options-list::-webkit-scrollbar-thumb{
+    background-color: #00a8ff;
+}
+  
+.language__options-list.active{
+    height: 180px;
+}
+
 
 .header__title-icon{
     width: 20%;
@@ -39,7 +101,7 @@
     justify-content: space-between;
 }
 .idcard {
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 .select-icon {
@@ -93,6 +155,7 @@
 }
 
 .container__content-title {
+    width: 50%;
     height: 4rem  ;
     display: flex;
     justify-content: left;
@@ -108,6 +171,7 @@
     font-family: var(--font-text);
     font-size: 2rem;
     opacity: 0.5;
+    width: 50%;
 }
 
 .container__content-body{
@@ -129,6 +193,7 @@
       border: 4px solid #191919;
       border-radius: 50%;
       box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+   
 }
 .container__content-body-clock2{
     display: flex;
@@ -178,6 +243,7 @@
     justify-content: center;
     position: absolute;
     border: 50%;
+   
 }
 .container__content-body-clock-mn::before {
     content: '';
@@ -187,6 +253,7 @@
     background-color: #797777;
     z-index: 11;
     border-radius: 6px 6px 0 0;
+    
 }
 .container__content-body-clock-mn2::before {
     content: '';
@@ -211,58 +278,59 @@
     
 }
 
-.container__content-voltage-table{
-    width: auto;
+.container__content-table{
+    width: 70%;
+    font-family: var(--font-text);
+    font-size: 1.9rem;
+    border: #848484 solid 2px;
 }
-.container__content-voltageTHD-table{
-    width: auto;
+.table__style{
+    border-color: #848484;
+    border-width: 1px;
+    background-color:   #FFFFF0;
 }
-.container__content-voltage-tablbtext{
-    color: blue;
-    font-size: 15px;
-    font-weight:600;
-    padding: 5px 15px;
+.table__style-row{
+    height: 3rem;
 }
-.container__content-voltagevalue-tablbtext{
-    color: white;
-    font-size: 15px;
-    font-weight: 550;
-    background-color: blue;
-    width: 100px;
+.table__style-cell-value{
+    width: 9rem;
     text-align: right;
+    color: var(--white-color);
+  
 }
-.container__content-current-table{
-    width: auto;
+.table__style-cell-subject{
+    width: 20rem;
+    padding: 0 15px;
+}
+/* Hiển thị khung logout */ 
+.frame__login {
+    position: absolute;
+    top: 57px;
+    width: 190px;
+    right: 30px;
+    border: 1px solid var(--black-color);
+    background-color: var(--white-color);
+    font-size: 1.7rem;
+    border-radius: 6%; 
+}
 
+.frame__login-setting,
+.frame__login-activity,
+.frame__login-logout,
+.frame__login-setting-link,
+.frame__login-activity-link,
+.frame__login-logout-link
+{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--black-color);
+    list-style: none;
+    height: 4rem;
+    width: 100%;
 }
-.container__content-currentTHD-table{
-    width: auto;
-}
-.container__content-current-tablbtext{
-    color: red;
-    font-size: 15px;
-    font-weight:600;
-    padding: 5px 15px;
-}
-.container__content-currentvalue-tablbtext{
-    color: white;
-    font-size: 15px;
-    font-weight: 550;
-    background-color: red;
-    width: 100px;
-    text-align: right;
-}
-.container__content-table-container {
-    display: flex;
-  }
-  
-.container__content-table-container table {
-    margin-right: 15px;
-}
-.container__content-tableTHD-container {
-    display: flex;
-  }
-  
-.container__content-tableTHD-container table {
-    margin-right: 88px;
+.frame__login-setting:hover,
+.frame__login-activity:hover,
+.frame__login-logout:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }

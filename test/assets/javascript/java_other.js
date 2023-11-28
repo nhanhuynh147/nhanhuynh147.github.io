@@ -1,17 +1,6 @@
-const sc = document.querySelector('#container__content-body-clock-mn');
-const sr = document.querySelector('#container__content-body-clock-mn2');
+
 x=100;
 y=-300;
-
-function rotatefinger (){
-    let scdeg = 300/1000*x-150;
-    let srdeg = 150/500*y;
-    sc.style.transform = 'rotateZ('+ String(scdeg) +'deg)';
-    sr.style.transform = 'rotateZ('+ String(srdeg)  +'deg)';
-}
-setInterval(rotatefinger(), 1000);
-
-
 document.getElementById('idcard').addEventListener('click', function(){
     if (document.getElementById('frame__login').style.display.endsWith('none') ) {
         // frame_login_js.style.display = 'block';

@@ -39,4 +39,9 @@ html {
         opacity: 1;
     }
 }
-
+.bg__blue{
+    background-color: blue;
+}
+.bg__red{
+    background-color: red;
+}

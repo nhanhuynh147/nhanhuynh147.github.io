@@ -15,26 +15,48 @@
                 Energy monitoring
             </div>
             <div class="header__title-language">
-                Language: English
+                <div class="language__select-menu">
+                    <div class="language__select">
+                      <span>Language: English</span>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="language__options-list">
+                      <div class="language__option selected">English</div>
+                      <div class="language__option">Arabic</div>
+                      <div class="language__option">Hindi</div>
+                      <div class="language__option">Spanish</div>
+                      <div class="language__option">French</div>
+                      <div class="language__option">Vietnamese</div>
+                      <div class="language__option">Japanese</div>
+                      <div class="language__option">Korean</div>
+                    </div>
+                </div>
             </div>
             <div class="header__title-icon">
                     <i class="header__title-icon-hov fas fa-bell"></i>
                     <i class="header__title-icon-hov fas fa-exclamation-triangle"></i>
                     <i class="header__title-icon-hov fas fa-plug"></i>
-                    <div class="header__title-icon-hov idcard">
-                        <i class="fas fa-user"></i>
-                        <i class="select-icon fas fa-sort-down"></i>
+                    <div class=" idcard" id="idcard">
+                        <div class="header__title-icon-hov idcard__icon">
+                            <i class="fas fa-user"></i>
+                            <i class="select-icon fas fa-sort-down"></i>
+                        </div>
+                        <div class="frame__login" id="frame__login" style="display: none;">
+                            <li class="frame__login-setting"><a href="" class="frame__login-setting-link">Settings</a></li>
+                            <li class="frame__login-activity"><a href="" class="frame__login-activity-link">Activity Log</a></li>
+                            <li class="frame__login-logout"><a href="" class="frame__login-logout-link">Logout</a></li>
+                        </div>
                     </div>
             </div>         
         </div>
     </header>
     <div class="container">
        <div class="container__application">
-            <div class="container__application-dashboard">
-                <a href="index.html" class="container__application-dashboard">Dashboard</a>
+            <div class="container__application-dashboard" >
+                <a href="index.html" class="container__application-dashboard" style="color: white;" >Dashboard</a>
             </div>
             <div class="container__application-trend">
-                <a href="trend.html" class="container__application-trend">Trend</a>
+                <a href="trend.html" class="container__application-trend" >Trend</a>
             </div>
             <div class="container__application-report">
                 <a href="report.html" class="container__application-report">Report</a>
@@ -54,7 +76,7 @@
                 Dashboard Device
             </div>
             <div class="container__content-item">
-                        Dashboard PAC3200
+                        Dashboard PAC3100
             </div>
             <div class="container__content-body">
                 <div class="container__content-body-clock">
@@ -68,61 +90,50 @@
                       </div>
                 </div>
             </div>
-            <div class="container__content-table-container">
-                <table class ="container__content-voltage-table" > 
-                    <tr> 
-                        <td class="container__content-voltage-tablbtext">Voltage Phase AB:</td>
-                        <td class="container__content-voltagevalue-tablbtext">12 V</td>
-                        <td class="container__content-voltage-tablbtext">Voltage Phase AN:</td>
-                        <td class="container__content-voltagevalue-tablbtext">12 V</td>
-                    </tr>
-                    <tr> 
-                        <td class="container__content-voltage-tablbtext">Voltage Phase BC:</td>
-                        <td class="container__content-voltagevalue-tablbtext">12 V</td>
-                        <td class="container__content-voltage-tablbtext">Voltage Phase BN:</td>
-                        <td class="container__content-voltagevalue-tablbtext">12 V</td>
-                    </tr>
-                    <tr> 
-                        <td class="container__content-voltage-tablbtext">Voltage Phase CA:</td>
-                        <td class="container__content-voltagevalue-tablbtext">12.45 V</td>
-                        <td class="container__content-voltage-tablbtext">Voltage Phase CN:</td>
-                        <td class="container__content-voltagevalue-tablbtext">12 V</td>
-                    </tr>    
-                </table> 
-                <table class ="container__content-current-table" > 
-                    <tr> 
-                        <td class="container__content-current-tablbtext">Current Phase AN:</td>
-                        <td class="container__content-currentvalue-tablbtext">12 A</td>               
-                    </tr>
-                    <tr> 
-                        <td class="container__content-current-tablbtext">Current Phase BC:</td>
-                        <td class="container__content-currentvalue-tablbtext">12 A</td>           
-                    </tr>
-                    <tr> 
-                        <td class="container__content-current-tablbtext">Current Phase CA:</td>
-                        <td class="container__content-currentvalue-tablbtext">12.45 A</td>
-                    </tr>               
-                </table> 
-            </div>
-            <div class="container__content-tableTHD-container">
-                <table class="container__content-voltageTHD-table"> 
-                    <tr> 
-                        <td class="container__content-voltage-tablbtext">THD Voltage (%):</td>
-                        <td class="container__content-voltagevalue-tablbtext">12.565 %</td>
-                        <td class="container__content-voltagevalue-tablbtext">12 %</td>
-                        <td class="container__content-voltagevalue-tablbtext">12 %</td>
-                    </tr>                      
-                </table>     
-                <table class="container__content-currentTHD-table"> 
-                    <tr> 
-                        <td class="container__content-current-tablbtext">THD Voltage (%):</td>
-                        <td class="container__content-currentvalue-tablbtext">12 % </td>
-                        <td class="container__content-currentvalue-tablbtext">12 %</td>
-                        <td class="container__content-currentvalue-tablbtext">12 %</td>
-                    </tr>                   
+            
+            <div class="container__content-table">
+                <table class="table__style">
+                <tr class="table__style-row">
+                    <td class="table__style-cell-subject">Voltage Phase AB:</td>
+                    <td class="table__style-cell-value bg__blue">120V</td>
+                    <td class="table__style-cell-subject" >Voltage Phase AN:</td>
+                    <td class="table__style-cell-value bg__blue" >120V</td>
+                    <td class="table__style-cell-subject">Current Phase A:</td>
+                    <td class="table__style-cell-value bg__red">200A</td>
+                </tr>
+                <tr class="table__style-row">
+                    <td class="table__style-cell-subject">Voltage Phase BC:</td>
+                    <td class="table__style-cell-value bg__blue">405V</td>
+                    <td class="table__style-cell-subject">Voltage Phase BN:</td>
+                    <td class="table__style-cell-value bg__blue">242V</td>
+                    <td class="table__style-cell-subject">Current Phase B</td>
+                    <td class="table__style-cell-value bg__red">299A</td>
+                </tr>
+                <tr class="table__style-row">
+                    <td class="table__style-cell-subject">Voltage Phase CA:</td>
+                    <td class="table__style-cell-value bg__blue">398V</td>
+                    <td class="table__style-cell-subject">Voltage Phase CN</td>
+                    <td class="table__style-cell-value bg__blue">243V</td>
+                    <td class="table__style-cell-subject">Current Phase C</td>
+                    <td class="table__style-cell-value bg__red">284A</td>
+                </tr>
+                <tr class="table__style-row">
+                    <td class="table__style-cell-subject">THD Voltage (%)</td>
+                    <td class="table__style-cell-value bg__blue">11,00THDAN</td>
+                    <td class="table__style-cell-value bg__blue">11,00THDAN</td>
+                    <td class="table__style-cell-value bg__blue">11,00THDAN</td>
+                    <td class="table__style-cell-subject">THD Current(%)</td>
+                    <td class="table__style-cell-value bg__red">39,00%</td>
+                    <td class="table__style-cell-value bg__red">39,00%</td>
+                    <td class="table__style-cell-value bg__red">39,00%</td>
+                </tr>
                 </table>
             </div>
+            
+
+            
         </div>
     </div>
+    <script src="./assets/javascript/java.js"></script>
 </body>
 </html>
