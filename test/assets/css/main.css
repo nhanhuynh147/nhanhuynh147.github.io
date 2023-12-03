@@ -2,7 +2,7 @@
 .header.header {
     width: 100%;
     height: 56px;
-    background-color: #212529;
+    background-color: var(--frame-color);
     display: flex;
     align-items: center;
    
@@ -44,7 +44,7 @@
     position: relative;
 }
 .language__select{
-    background-color: #212529;
+    background-color: var(--frame-color);
     padding: 0px;
     color: #fff;    
     display: flex;
@@ -111,7 +111,7 @@
 .container__application {
     overflow-y: auto;
     flex-grow: 1;
-    background-color: #212529;
+    background-color: var(--frame-color);
     width: 26rem;
     min-height: 100vh;
     display: flex;
@@ -148,22 +148,31 @@
 }
 
 .container__content {
-    background-color: var(--white-color);
+    background: var(--main-color);
     width: 85%;
     padding-left: 10px;
     padding-right: 10px;
+    color: var(--white-color);
 }
 
 .container__content-title {
-    width: 50%;
-    height: 4rem  ;
     display: flex;
+    height: 4rem;
+    padding: 8px;
+    margin-top: 8px;
+}
+.container__content-title-name{
     justify-content: left;
     align-items: center;
     font-family: var(--font-text);
     font-size: 3rem;
-    font-weight: 700;
-    padding: 8px;
+    font-weight: 500;
+    width: 50%;
+}
+.container__content-title-date{
+    text-align: right;
+    width: 50%;
+    font-size: 2.5rem;
 }
 
 .container__content-item {
@@ -175,17 +184,18 @@
 }
 
 .container__content-body{
-    width: 100%;
-    height: 50rem;
-    background-color: var(--white-color);
+    /* width: 100%;
+    height: 50rem; */
+    /* background: var(--main-color); */
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .container__content-body-clock{
       display: flex;
-      width: 350px;
-      height: 350px;
+      width: 250px;
+      height: 250px;
       justify-content: center;
       align-items: center;
       background-image: url(../image/clock1.png) ;
@@ -235,8 +245,8 @@
 }
 .container__content-body-clock-min, .container__content-body-clock-mn,
 .container__content-body-clock-min2, .container__content-body-clock-mn2 {
-    width: 280px;
-    height: 280px;
+    width: 150px;
+    height: 150px;
 }
 .container__content-body-clock-mn, .container__content-body-clock-mn2 {
     display: flex;
@@ -249,7 +259,7 @@
     content: '';
     position: absolute;
     width: 4px;
-    height: 130px;
+    height: 75px;
     background-color: #797777;
     z-index: 11;
     border-radius: 6px 6px 0 0;
@@ -278,30 +288,7 @@
     
 }
 
-.container__content-table{
-    width: 70%;
-    font-family: var(--font-text);
-    font-size: 1.9rem;
-    border: #848484 solid 2px;
-}
-.table__style{
-    border-color: #848484;
-    border-width: 1px;
-    background-color:   #FFFFF0;
-}
-.table__style-row{
-    height: 3rem;
-}
-.table__style-cell-value{
-    width: 9rem;
-    text-align: right;
-    color: var(--white-color);
-  
-}
-.table__style-cell-subject{
-    width: 20rem;
-    padding: 0 15px;
-}
+
 /* Hiển thị khung logout */ 
 .frame__login {
     position: absolute;
@@ -333,4 +320,38 @@
 .frame__login-logout:hover{
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.container__content-device{
+    background-color: var(--secondary-color);
+    min-width: 430px;
+    min-height: 312px;
+    border-radius: 2%;
+    margin: 15px;
+}
+.container__content-device-name{
+    font-size: 2rem;
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    padding: 7px 15px;
+    font-family: var(--font-text);
+}
+.container__content-device-body{
+    display: flex;
+    
+}
+.container__content-device-body-gauge{
+    /* border-right: 2px solid rgba(0,0,0,.2); */
+    padding: 15px;
+}
+.container__content-device-body-value{
+    min-width: 150px;
+    font-size: 2.5rem;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.device_value{
+    padding-bottom: 15px;
 }

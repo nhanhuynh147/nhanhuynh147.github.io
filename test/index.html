@@ -52,7 +52,7 @@
     </header>
     <div class="container">
        <div class="container__application">
-            <div class="container__application-dashboard" >
+            <div class="container__application-dashboard" style=" border-right: 3px solid #ADD8E6;" >
                 <a href="index.html" class="container__application-dashboard" style="color: white;" >Dashboard</a>
             </div>
             <div class="container__application-trend">
@@ -73,65 +73,118 @@
         </div> 
         <div class="container__content">
             <div class="container__content-title">   
-                Dashboard Device
+                <div class="container__content-title-name">
+                    Dashboard Device
+                </div>
+                <div class="container__content-title-date" id="Date">
+                    <!-- December, 1st 2023 -->
+                </div>
             </div>
             <div class="container__content-item">
-                        Dashboard PAC3100
+                        <!-- Dashboard PAC3100 -->
             </div>
             <div class="container__content-body">
-                <div class="container__content-body-clock">
-                    <div class="container__content-body-clock-min">
-                        <div class="container__content-body-clock-mn" id="container__content-body-clock-mn"></div>
-                      </div>
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        DEVICE 1
+                    </div>
+                    <div class="container__content-device-body">
+                        <div class="container__content-device-body-gauge">
+                            <div class="container__content-body-clock">
+                                <div class="container__content-body-clock-min">
+                                    <div class="container__content-body-clock-mn" id="container__content-body-clock-mn"></div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="container__content-device-body-value">
+                            <li class="device_value">4000kW</li>
+                            <li class="device_value">300kVAR</li>
+                            <li class="device_value">20A</li>
+                            <li class="device_value">240V</li>
+                        </div>
+                    </div>                                       
                 </div>
-                <div class="container__content-body-clock2">
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        CHANGE IN WATTAGE
+                    </div>
+                    <div class="container__content-device-body">
+                        <div class="container__content-device-body-gauge">
+
+                        </div>
+                        <div class="container__content-device-body-value">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        USAGE ESTIMATE
+                    </div>
+                    <div class="container__content-device-body">
+                        <div class="container__content-device-body-gauge">
+
+                        </div>
+                        <div class="container__content-device-body-value">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container__content-body-clock2">
                     <div class="container__content-body-clock-min2">
                         <div class="container__content-body-clock-mn2" id="container__content-body-clock-mn2"></div>
                       </div>
+                </div> -->
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        DEVICE 2
+                    </div>
+                    <div class="container__content-device-body">
+                        <div class="container__content-device-body-gauge">
+                            <div class="container__content-body-clock">
+                                <div class="container__content-body-clock-min">
+                                    <div class="container__content-body-clock-mn" id="container__content-body-clock-mn2"></div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="container__content-device-body-value">
+                            <li class="device_value">4000kW</li>
+                            <li class="device_value">300kVAR</li>
+                            <li class="device_value">20A</li>
+                            <li class="device_value">240V</li>
+                        </div>
+                    </div>                                       
                 </div>
-            </div>
-            
-            <div class="container__content-table">
-                <table class="table__style">
-                <tr class="table__style-row">
-                    <td class="table__style-cell-subject">Voltage Phase AB:</td>
-                    <td class="table__style-cell-value bg__blue">120V</td>
-                    <td class="table__style-cell-subject" >Voltage Phase AN:</td>
-                    <td class="table__style-cell-value bg__blue" >120V</td>
-                    <td class="table__style-cell-subject">Current Phase A:</td>
-                    <td class="table__style-cell-value bg__red">200A</td>
-                </tr>
-                <tr class="table__style-row">
-                    <td class="table__style-cell-subject">Voltage Phase BC:</td>
-                    <td class="table__style-cell-value bg__blue">405V</td>
-                    <td class="table__style-cell-subject">Voltage Phase BN:</td>
-                    <td class="table__style-cell-value bg__blue">242V</td>
-                    <td class="table__style-cell-subject">Current Phase B</td>
-                    <td class="table__style-cell-value bg__red">299A</td>
-                </tr>
-                <tr class="table__style-row">
-                    <td class="table__style-cell-subject">Voltage Phase CA:</td>
-                    <td class="table__style-cell-value bg__blue">398V</td>
-                    <td class="table__style-cell-subject">Voltage Phase CN</td>
-                    <td class="table__style-cell-value bg__blue">243V</td>
-                    <td class="table__style-cell-subject">Current Phase C</td>
-                    <td class="table__style-cell-value bg__red">284A</td>
-                </tr>
-                <tr class="table__style-row">
-                    <td class="table__style-cell-subject">THD Voltage (%)</td>
-                    <td class="table__style-cell-value bg__blue">11,00THDAN</td>
-                    <td class="table__style-cell-value bg__blue">11,00THDAN</td>
-                    <td class="table__style-cell-value bg__blue">11,00THDAN</td>
-                    <td class="table__style-cell-subject">THD Current(%)</td>
-                    <td class="table__style-cell-value bg__red">39,00%</td>
-                    <td class="table__style-cell-value bg__red">39,00%</td>
-                    <td class="table__style-cell-value bg__red">39,00%</td>
-                </tr>
-                </table>
-            </div>
-            
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        CHANGE IN WATTAGE
+                    </div>
+                    <div class="container__content-device-body">
+                        <div class="container__content-device-body-gauge">
 
-            
+                        </div>
+                        <div class="container__content-device-body-value">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        USAGE ESTIMATE
+                    </div>
+                    <div class="container__content-device-body">
+                        <div class="container__content-device-body-gauge">
+
+                        </div>
+                        <div class="container__content-device-body-value">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+         
         </div>
     </div>
     <script src="./assets/javascript/java.js"></script>

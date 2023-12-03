@@ -1,13 +1,13 @@
 const sc = document.querySelector('#container__content-body-clock-mn');
 const sr = document.querySelector('#container__content-body-clock-mn2');
-x=100;
+x=200;
 y=-300;
 
 function rotatefinger (){
     let scdeg = 300/1000*x-150;
     let srdeg = 150/500*y;
     sc.style.transform = 'rotateZ('+ String(scdeg) +'deg)';
-    sr.style.transform = 'rotateZ('+ String(srdeg)  +'deg)';
+    // sr.style.transform = 'rotateZ('+ String(srdeg)  +'deg)';
 }
 setInterval(rotatefinger(), 1000);
 
@@ -43,3 +43,7 @@ const options = document.querySelectorAll(".language__option");
             options_list.classList.toggle("active");
       });
     });
+var days =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var month = ["January","Febuary","March","April","May","Jun","July","August","September","October","November","December"];
+var date= new Date();
+document.getElementById("Date").innerHTML = days[date.getDay()]+', '+ date.getDate()+' '+month[date.getMonth()]+', '+date.getFullYear();
