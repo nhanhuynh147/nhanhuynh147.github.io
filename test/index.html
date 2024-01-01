@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__frame">
+            <div class="header__title-name">
+                Energy monitoring
+            </div>
+            <div class="header__title-language">
+                <div class="language__select-menu">
+                    <div class="language__select">
+                      <span>Language: English</span>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="language__options-list">
+                      <div class="language__option selected">English</div>
+                      <div class="language__option">Arabic</div>
+                      <div class="language__option">Hindi</div>
+                      <div class="language__option">Spanish</div>
+                      <div class="language__option">French</div>
+                      <div class="language__option">Vietnamese</div>
+                      <div class="language__option">Japanese</div>
+                      <div class="language__option">Korean</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__title-icon">
+                    <i class="header__title-icon-hov fas fa-bell"></i>
+                    <i class="header__title-icon-hov fas fa-exclamation-triangle"></i>
+                    <i class="header__title-icon-hov fas fa-plug"></i>
+                    <div class=" idcard" id="idcard">
+                        <div class="header__title-icon-hov idcard__icon">
+                            <i class="fas fa-user"></i>
+                            <i class="select-icon fas fa-sort-down"></i>
+                        </div>
+                        <div class="frame__login" id="frame__login" style="display: none;">
+                            <li class="frame__login-setting"><a href="" class="frame__login-setting-link">Settings</a></li>
+                            <li class="frame__login-activity"><a href="" class="frame__login-activity-link">Activity Log</a></li>
+                            <li class="frame__login-logout"><a href="" class="frame__login-logout-link">Logout</a></li>
+                        </div>
+                    </div>
+            </div>         
+        </div>
+    </header>
+    <div class="container">
+       <div class="container__application">
+            <div class="container__application-dashboard" style=" border-right: 3px solid #ADD8E6;" >
+                <a href="index.html" class="container__application-dashboard" style="color: white;" >Dashboard</a>
+            </div>
+            <div class="container__application-trend">
+                <a href="trend.html" class="container__application-trend" >Trend</a>
+            </div>
+            <div class="container__application-report">
+                <a href="report.html" class="container__application-report">Report</a>
+            </div>
+           
+            <div class="container__application-history">
+                <a href="history.html" class="container__application-history">History</a>
+            </div>
+            <div class="container__application-information">
+                <a href="introduce.html" class="container__application-information">Introduction</a>
+            </div>
+        </div> 
+        <div class="container__content">
+            <div class="container__content-title">   
+                <div class="container__content-title-name">
+                    Dashboard Device
+                </div>
+                <div class="container__content-title-date" id="Date">
+                    <!-- December, 1st 2023 -->
+                </div>
+            </div>
+            <div class="container__content-item">
+                        <!-- Dashboard PAC3100 -->
+            </div>
+            <div class="container__content-body">
+
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        PHASE CURRENT 
+                    </div>
+                    <div class="container__content-device-body-voltage">
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Current A:</div>
+                            <div class="container__content-device-voltage-value">10A</div>                         
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Current B:</div>
+                            <div class="container__content-device-voltage-value">12A</div>                            
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Current C:</div>
+                            <div class="container__content-device-voltage-value">13A</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        PHASE VOLTAGE
+                    </div>
+                    <div class="container__content-device-body-voltage">
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Phase AB:</div>
+                            <div class="container__content-device-voltage-value">380V</div>
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Phase BC:</div>
+                            <div class="container__content-device-voltage-value">400V</div>
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Phase CA:</div>
+                            <div class="container__content-device-voltage-value">390V</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        LINE VOLTAGE
+                    </div>
+                    <div class="container__content-device-body-voltage">
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Phase AN:</div>
+                            <div class="container__content-device-voltage-value">380V</div>                         
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Phase BN:</div>
+                            <div class="container__content-device-voltage-value">400V</div>                            
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Phase CN:</div>
+                            <div class="container__content-device-voltage-value">390V</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container__content-body-clock2">
+                    <div class="container__content-body-clock-min2">
+                        <div class="container__content-body-clock-mn2" id="container__content-body-clock-mn2"></div>
+                      </div>
+                </div> -->
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        TOTAL WATTAGE
+                    </div>
+                    <div class="container__content-device-body-voltage">
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Now:</div>
+                            <div class="container__content-device-voltage-value">380kW</div>                         
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Total:</div>
+                            <div class="container__content-device-voltage-value">3000kW</div>                         
+                        </div>
+                    </div>                                   
+                </div>
+                
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        PAC3100
+                    </div>
+                    <div class="container__content-device-body">
+                        <div class="container__content-device-body-gauge">
+                            <div class="container__content-body-clock">
+                                <div class="container__content-body-clock-min">
+                                    <div class="container__content-body-clock-mn" id="container__content-body-clock-mn"></div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="container__content-device-body-value">
+                            <li class="device_value">4000kW</li>
+                            <li class="device_value">300kVAR</li>
+                            <li class="device_value">20A</li>
+                            <li class="device_value">240V</li>
+                        </div>
+                    </div>                                       
+                </div>
+
+                <div class="container__content-device">
+                    <div class="container__content-device-name">
+                        WORKLOAD
+                    </div>
+                    <div class="container__content-device-body-voltage">
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Today:</div>
+                            <div class="container__content-device-voltage-value">10 bao</div>                         
+                        </div>
+                        <div class="container__content-device-voltage">
+                            <div class="container__content-device-voltage-name">Total:</div>
+                            <div class="container__content-device-voltage-value">1200 bao</div>                         
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+         
+        </div>
+    </div>
+    <script src="./assets/javascript/java.js"></script>
+</body>
+</html>
